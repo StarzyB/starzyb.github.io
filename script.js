@@ -1,22 +1,35 @@
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('Page loaded!');
-  const aboutButton = document.querySelector('.aboutbuttonnav');
-  if (aboutButton) {
-    console.log('.aboutbuttonnav found!');
-    aboutButton.addEventListener('click', () => {
-      console.log('About button clicked!');
-     
-    });
-  } else {
-    console.log('.aboutbuttonnav not found!');
-  }
-});
-
+/*about*/
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelector('.aboutbuttonnav').addEventListener('click', () => {
-    document.querySelector('.about').classList.toggle('visible');
-    document.querySelector('.frontpage').classList.toggle('hidden');
-    document.querySelector('.about').style.transition = 'opacity 0.5s';
-  });
-});
+    document.querySelector('.aboutbuttonnav').addEventListener('click', () => {
+        const aboutElement = document.querySelector('.about');
+        const frontpageElement = document.querySelector('.frontpage');
+        if (aboutElement.classList.contains('visible')) {
+            console.log('About is visible');
+        } else {
+            aboutElement.classList.toggle('visible');
+            frontpageElement.classList.toggle('hidden');
+        }
+        aboutElement.style.transition = 'opacity 0.5s';
+        frontpageElement.style.transition = 'opacity 0.5s';
+    }
+    );
+}
+);
 
+/*home*/
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.homebuttonnav').addEventListener('click', () => {
+        const aboutElement = document.querySelector('.about');
+        const frontpageElement = document.querySelector('.frontpage');
+        if (frontpageElement.classList.contains('hidden')) {
+            aboutElement.classList.toggle('visible');
+            frontpageElement.classList.toggle('hidden');
+        } else {
+            console.log('Home is visible');
+        }
+        aboutElement.style.transition = 'opacity 0.5s';
+        frontpageElement.style.transition = 'opacity 0.5s';
+    }
+    );
+}
+);
