@@ -133,12 +133,16 @@ button.homeshop {
 
 
 .about {
+    display: flex;
     padding: 10vh;
-  opacity: 0;
-  transition: opacity 0.5s;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about.visible {
