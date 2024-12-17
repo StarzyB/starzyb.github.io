@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('.aboutbuttonnav found!');
     aboutButton.addEventListener('click', () => {
       console.log('About button clicked!');
-      document.querySelector('.about').classList.toggle('visible');
-      document.querySelector('.frontpage').classList.toggle('hidden');
+     
     });
   } else {
     console.log('.aboutbuttonnav not found!');
@@ -15,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('.aboutbuttonnav').addEventListener('click', () => {
-    document.querySelector('.about').style.opacity = '1';
-    document.querySelector('.frontpage').style.opacity = '0';
+    document.querySelector('.about').classList.toggle('visible');
+    document.querySelector('.frontpage').classList.toggle('hidden');
+    document.querySelector('.about').style.transition = 'opacity 0.5s';
   });
 });
+
