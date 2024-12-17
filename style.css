@@ -225,13 +225,15 @@ p.saletext {
 }
 
 .sale {
-    position: absolute;
-    top: 1vw;
-    left: 4%;
-    width: 46%;
-    overflow-x: hidden;
-    height: 2vw;
-    overflow-y: visible;
+     /* Full width of the container */
+     overflow: hidden; /* Hide any overflowing content */
+     white-space: nowrap; /* Prevent text wrapping */
+     position: absolute;
+     left: 4%;
+     width: 46%;
+     overflow-x: hidden;
+     height: 10%;
+     overflow-y: visible;
 }p.saletext {
     height: 100%;
     width: max-content;
