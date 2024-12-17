@@ -135,7 +135,9 @@ button.homeshop {
 p.aboutdesc {
     margin-top: 2vh;
     color: var(--purple);
-}p.cybersongdescabout {
+}
+
+p.cybersongdescabout {
     margin-top: 2vh;
     color: var(--purple);
 }
