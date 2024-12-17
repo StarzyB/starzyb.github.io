@@ -130,3 +130,14 @@ p.frontpagedesc {
 button.homeshop {
     box-shadow: 0 0 7px;
 }
+
+
+  .about {
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .frontpage {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
