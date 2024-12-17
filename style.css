@@ -19,7 +19,8 @@ body {
 .headerlogo {
     position: fixed;
     top: 2vh;
-    height: 19vh;
+    height: 7vw;
+    z-index: 9999;
 }
 
 .header {
@@ -37,7 +38,7 @@ body {
 button.navbarbutton {
     position: relative;
     width: 15vw;
-    height: 7vh;
+    height: 3vw;
     color: var(--white);
     background: transparent;
     margin-left: 2vw;
@@ -96,18 +97,18 @@ p.frontpagedesc {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin-top: 4vh;
+    margin-top: 2vw;
     margin-bottom: 20vh;
 }
 
 button.homeshop {
     border-color: var(--cyan);
-    border-width: 0.7vh;
+    border-width: 0.4vw;
     color: var(--cyan);
     width: 15%;
-    height: 8vh;
+    height: 3.5vw;
     background: var( --purple);
-    font-size: 3.5vh;
+    font-size: 1.5vw;
 }
 
 .glowingtext {
@@ -184,4 +185,16 @@ p.aboutdesc {
 
 .aboutheader {
     color: var(--white);
+}
+
+h2.aboutheader2 {
+    color: var(--white);
+    margin-top: 8vh;
+}
+
+p.aboutinfo {
+    margin-top: 4vh;
+    color: var(--purple);
+    margin-left: 20vw;
+    margin-right: 20vw;
 }
