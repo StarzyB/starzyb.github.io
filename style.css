@@ -199,6 +199,7 @@ p.cybersongdescabout {
 }
 
 .aboutheader {
+    margin-top: 3vw;
     color: var(--white);
 }
 
