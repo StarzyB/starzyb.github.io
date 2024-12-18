@@ -17,6 +17,35 @@ body {
     overflow-x: hidden;
 }
 
+
+body {
+  --sb-track-color: #121113;
+  --sb-thumb-color: #9914ff;
+  --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+  border: 2px solid #34f5ff;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
+
 .headerlogo {
     position: fixed;
     top: 2vh;
@@ -93,6 +122,8 @@ p.frontpagedesc {
 }
 
 .shopbutton {
+    position: absolute;
+    z-index: 500;
     display: flex;
     width: 100%;
     align-items: center;
@@ -126,10 +157,12 @@ p.frontpagecred {
 }
 
 p.frontpagedesc {
+    cursor: default;
     text-shadow: 0 0 7px var(--white);
 }
 
 button.homeshop {
+    transition: transform 0.3s ease; /* Smooth transition */
     box-shadow: 0 0 7px;
 }
 
@@ -271,4 +304,29 @@ p.aboutdisclaimer {
     color: var(--cyan);
     font-size: 1vw;
     margin-bottom: 3vw;
+}
+
+button.homeshop:hover {
+    transform: scale(1.1);
+}
+
+.sale {
+    overflow-x: hidden;
+    height: 50%;
+}
+
+p.saletext {
+    color: var(--cyan);
+}
+
+p.aboutdisclaimer {
+    color: var(--cyan);
+    font-size: 1vw;
+    margin-bottom: 3vw;
+}
+
+.unselectable {
+    cursor: default;
+    user-select: none;
+    /* Prevent text selection */
 }
