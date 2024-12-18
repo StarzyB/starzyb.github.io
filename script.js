@@ -93,3 +93,30 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 }
 );
+
+document.addEventListener('DOMContentLoaded', function() {
+  // GitHub repository details
+  const username = 'StarzyB';
+  const repoName = 'starzyb.github.io';
+
+  // GitHub API endpoint
+  const apiUrl = `https://api.github.com/repos/StarzyB/starzyb.github.io`;
+
+  // Fetch repository data
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      // Get the size of the repo in KB
+      const repoSizeInKB = data.size;
+
+      // Convert the size to GB (1 GB = 1,000,000 KB)
+      const repoSizeInGB = (repoSizeInKB / 1000).toFixed(2);
+
+      // Update the project size in the div
+      document.getElementById('project-size').textContent = `${repoSizeInGB} MB`;
+    })
+    .catch(error => {
+      console.error('Error fetching repository data:', error);
+      document.getElementById('project-size').textContent = 'Error fetching data';
+    });
+});
