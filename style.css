@@ -153,20 +153,13 @@ p.cybersongdescabout {
 }
 
 .about {
-    display: flex;
     padding: 10vh;
     opacity: 0;
     transition: opacity 0.5s;
     position: absolute;
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-=======
     text-align: center;
->>>>>>> 1eace40635296e5bd459d99ea444a0037a9f1c88
 }
 
 .about.visible {
@@ -210,42 +203,57 @@ p.aboutinfo {
 
 p.saletext {
     color: var(--cyan);
-}p.aboutdisclaimer {
+}
+
+p.aboutdisclaimer {
     color: var(--cyan);
     font-size: 1vw;
     margin-bottom: 3vw;
 }
 
 .scrolling-text {
-  display: inline-block;
-  padding-left: 100%; /* Start the text from outside the container */
-  animation: scroll-text 20s linear infinite; /* Animation to move the text */
+    display: inline-block;
+    padding-left: 100%;
+    /* Start the text from outside the container */
+    animation: scroll-text 20s linear infinite;
+    /* Animation to move the text */
 }
 
 @keyframes scroll-text {
-  0% {
-    transform: translateX(0); /* Start at the initial position */
-  }
-  100% {
-    transform: translateX(-100%); /* Move it completely off the left */
-  }
+    0% {
+        transform: translateX(0);
+        /* Start at the initial position */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* Move it completely off the left */
+    }
 }
 
 .sale {
-     /* Full width of the container */
-     overflow: hidden; /* Hide any overflowing content */
-     white-space: nowrap; /* Prevent text wrapping */
-     position: absolute;
-     left: 4%;
-     width: 46%;
-     overflow-x: hidden;
-     height: 10%;
-     overflow-y: visible;
-}p.saletext {
-    height: 100%;
+    /* Full width of the container */
+    display: flex;
+    overflow: hidden;
+    /* Hide any overflowing content */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    position: absolute;
+    left: 4%;
+    width: 46%;
+    overflow-x: hidden;
+    height: 10%;
+    overflow-y: visible;
+    align-items: center;
+}
+
+p.saletext {
+    height: 1.5vw;
     width: max-content;
     color: var(--cyan);
-}p.aboutdisclaimer {
+}
+
+p.aboutdisclaimer {
     color: var(--cyan);
     font-size: 1vw;
     margin-bottom: 3vw;
