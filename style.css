@@ -187,7 +187,7 @@ p.cybersongdescabout {
 	position: absolute;
 	opacity: 1;
 	transition: opacity 0.5s;
-	height: -webkit-fill-available;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 }
