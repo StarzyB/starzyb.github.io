@@ -1,0 +1,85 @@
+@font-face {
+    font-family: ZPix;
+    src: url('https://github.com/SolidZORO/zpix-pixel-font/raw/refs/heads/master/website/zpix.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300 800;
+}
+
+body {
+    display: flex
+;
+    width: 62vw;
+    height: 43.25vw;
+    background-color: black;
+    border-color: white;
+    border-radius: 1%;
+    border-style: solid;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+html {
+    height: auto;
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+}
+
+.nowplaying {
+    margin: 2vw;
+}
+
+.nowplayingtext {
+    font-family: Zpix;
+    font-size: 2vw;
+    color: white;
+    margin-top: 0px;
+}
+
+.currentSong{
+    font-family: Zpix;
+    font-size: 4vw;
+    color: white;
+    margin: 0px;
+}
+
+
+.song {
+    font-family: Zpix;
+    font-size: 4vw;
+    color: white;
+    margin: 0px;
+}
+
+.artist {
+    font-family: Zpix;
+    font-size: 2vw;
+    color: white;
+    margin: 0px;
+}
+
+.albumcover {
+    width: 10vw;
+    height: 10vw;
+    margin-right: 1vw;
+}
+#progress-bar {
+    margin-top: 2vw;
+    background-color: white;
+    height: 1vw;
+    border-radius: 0px;
+    transition: width 0.5s;
+}
+
+.songinfotop {
+    display: flex
+;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
