@@ -36,7 +36,16 @@
             </div>
             <div class="shopbutton">
                 <button class="homeshop shopbuttonnav unselectable">Shop</button>
-                <button class="homeshop apibuttonnav unselectable">API</button>
+                <button class="homeshop apibuttonnav unselectable" onclick="loadAPIPage(event)">API</button>
+                <script>
+                    function loadAPIPage(event) {
+                        event.preventDefault();
+                        // Prevent default action for debugging
+                        console.log("Button clicked");
+                        // Check if the function is triggered
+                        window.location.href = "https://starzyb.github.io/cybersongapi.html";
+                    }
+                </script>
             </div>
             <div id="statistics">
                 <h3>Project Statistics</h3>
