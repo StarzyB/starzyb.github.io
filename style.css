@@ -327,7 +327,7 @@ div#statistics {
 }
 
 img.productimg {
-    height: 20vw;
+    height: inherit;
 }
 
 .product {
@@ -337,6 +337,8 @@ img.productimg {
     align-content: center;
     justify-content: space-around;
     align-items: flex-start;
+    margin: 20vh;
+    height: 90vh;
 }
 
 .shop.visible {
@@ -345,4 +347,32 @@ img.productimg {
     align-content: center;
     align-items: center;
     justify-content: flex-start;
+}
+
+p.shopdesc {
+    color: var(--purple);
+    margin-top: 10vh;
+}
+
+h1.productname {
+    color: var(--cyan);
+    margin-bottom: 5vh;
+}
+
+p.productdesc {
+    color: var(--purple);
+}
+
+p.productprice {
+    color: var(--yellow);
+    margin-top: 15vh;
+}
+
+.productinfo {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
 }
